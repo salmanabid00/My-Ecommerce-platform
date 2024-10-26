@@ -72,3 +72,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 =======
 # E-commerce-platform
 >>>>>>> 95422bbdb35425f54fc98fd03512cff7ba64d227
+# ShopEasy - E-commerce Platform
+
+A sleek, fully responsive e-commerce application crafted with HTML, CSS, JavaScript, Tailwind CSS, and React. Key features include:
+
+- **Dynamic Product Catalog**: View, search, and filter products with detailed pages.
+- **Cart & Checkout**: Smooth cart management with a multi-step checkout process.
+- **User Order History**: Track past orders for seamless reordering.
+- **Admin Dashboard**: Effortless product and user management with CRUD operations.
+
+## Tech Highlights
+- State management via Redux Toolkit
+- Robust form validation with Formik & Yup
+- API integration with Rapid API
+
+ShopEasy is designed for a smooth, engaging shopping experience and efficient product management.
