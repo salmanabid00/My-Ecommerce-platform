@@ -1,89 +1,115 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# ShopEasy - Full Stack E-commerce Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A complete e-commerce solution with a React frontend and Node.js backend.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Dynamic Product Catalog**: Browse, search, and filter products with detailed pages
+- **User Authentication**: Secure registration and login system
+- **Shopping Cart**: Add, update, and remove items from your cart
+- **Checkout Process**: Smooth, multi-step checkout with address and payment information
+- **Order Management**: Place orders and track order history
+- **Admin Dashboard**: Manage products, users, and orders with full CRUD operations
+- **Responsive Design**: Fully responsive UI that works on all devices
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend
+- React.js with functional components and hooks
+- Redux Toolkit for state management
+- React Router for navigation
+- Formik & Yup for form validation
+- Tailwind CSS for styling
+- Axios for API requests
+- React Toastify for notifications
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Backend
+- Node.js & Express.js for the server
+- MongoDB for the database
+- Mongoose for object modeling
+- JWT for authentication
+- bcrypt.js for password hashing
+- Express Async Handler for error handling
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
+- Node.js (v14 or higher)
+- MongoDB (local or Atlas)
+- npm or yarn
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**
+   ```
+   git clone <repository-url>
+   cd my-ecommerce-platform
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install frontend dependencies**
+   ```
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Install backend dependencies**
+   ```
+   cd backend
+   npm install
+   cd ..
+   ```
 
-### `npm run eject`
+4. **Set up environment variables**
+   Create a `.env` file in the backend directory with the following variables:
+   ```
+   PORT=5000
+   MONGO_URI=mongodb://localhost:27017/ecommerce
+   JWT_SECRET=your_jwt_secret_key
+   NODE_ENV=development
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **Seed the database with sample data**
+   ```
+   cd backend
+   npm run data:import
+   cd ..
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Running the Application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Development mode (Frontend & Backend concurrently)**
+```
+npm run dev
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Frontend only**
+```
+npm start
+```
 
-## Learn More
+**Backend only**
+```
+npm run server
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## API Endpoints
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The backend provides a comprehensive set of RESTful API endpoints:
 
-### Code Splitting
+- **Products**: CRUD operations, reviews, filtering
+- **Users**: Authentication, profile management
+- **Cart**: Add, update, remove items
+- **Orders**: Create, update, view orders
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+For detailed API documentation, see the [backend README](./backend/README.md).
 
-### Analyzing the Bundle Size
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The application can be deployed to various platforms:
 
-### Making a Progressive Web App
+- Frontend: Vercel, Netlify, or GitHub Pages
+- Backend: Heroku, AWS, or DigitalOcean
+- Database: MongoDB Atlas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# E-commerce-platform
->>>>>>> 95422bbdb35425f54fc98fd03512cff7ba64d227
-# ShopEasy - E-commerce Platform
-
-A sleek, fully responsive e-commerce application crafted with HTML, CSS, JavaScript, Tailwind CSS, and React. Key features include:
-
-- **Dynamic Product Catalog**: View, search, and filter products with detailed pages.
-- **Cart & Checkout**: Smooth cart management with a multi-step checkout process.
-- **User Order History**: Track past orders for seamless reordering.
-- **Admin Dashboard**: Effortless product and user management with CRUD operations.
-
-## Tech Highlights
-- State management via Redux Toolkit
-- Robust form validation with Formik & Yup
-- API integration with Rapid API
-
-ShopEasy is designed for a smooth, engaging shopping experience and efficient product management.
+This project is licensed under the MIT License.
